@@ -1,9 +1,9 @@
-name: ST-BoilerPlate # TODO: 수정
-main: net.starly.boilerplate.BoilerPlateMain # TODO: 수정
+name: ST-ChatItem
+main: net.starly.chatitem.ChatItemMain
 author: Starly Team
 website: http://starly.kr/discord
 
-description: BoilerPlate Plugin. # TODO: 수정
+description: ChatItem Plugin.
 
 softdepend:
   - ST-Core
@@ -11,4 +11,12 @@ softdepend:
 version: 1.0
 api-version: 1.13
 
+permissions:
+  starly.chatitem.reload:
+    description: 아이템자랑 명령어 리로드 권한
+
+
 commands:
+  chatitem:
+    description: 아이템 자랑 명령어
+    aliases: [ 아이템자랑 ]
