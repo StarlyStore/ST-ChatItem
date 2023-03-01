@@ -26,7 +26,7 @@ public class ChatItemMain extends JavaPlugin {
         instance = this;
         new Metrics(this, 12345); // TODO: 수정
 
-        if (!new File("config.yml").exists()) saveDefaultConfig();
+        saveDefaultConfig();
         MessageContent.getInstance().initializing(getConfig());
 
         Bukkit.getPluginCommand("chatitem").setExecutor(new ChatItemCmd());
